@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 02</title>
+    <style>
+        html, body {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: cadetblue;
+            display: grid;
+            place-items: center;
+        }
+
+        .ball-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .darkred-circle {
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            background-color: darkred;
+            border-radius: 100%;
+            display: grid;
+            place-items: center;
+        }
+
+        .yellow-circle {
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
+            position: absolute;
+            background-color: khaki;
+            border: 10px solid darkred;
+            border-radius: 100%;
+            z-index: 10px;
+        }
+
+        .top-circle {
+            height: 110px;
+            width: 100px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .red-half-circle {
+            background-color: crimson;
+            height: 50px;
+            width: 100px;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+
+        .white-half-circle {
+            height: 50px;
+            width: 100px;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="ball-container">
+        <div class="darkred-circle"></div>
+        
+        <div class="top-circle">
+            <div class="top-circle">
+                <div class="red-half-circle"></div>
+                <div class="white-half-circle"></div>
+            </div>
+        </div>
+
+        <div class="yellow-circle"></div>
+        
+    </div>
+</body>
+</html>

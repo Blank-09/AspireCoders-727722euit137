@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 01</title>
+    <style>
+        html, body {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: orange;
+            display: grid;
+            place-items: center;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            background: orange;
+        }
+
+        .square-container {
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="square-container">
+        <div class="circle" style="left: -50px; top: -50px;"></div>
+        <div class="circle" style="right: -50px; top: -50px;"></div>
+        <div class="circle" style="left: -50px; bottom: -50px;"></div>
+        <div class="circle" style="right: -50px; bottom: -50px;"></div>
+        <div class="square"></div>
+    </div>
+</body>
+</html>
